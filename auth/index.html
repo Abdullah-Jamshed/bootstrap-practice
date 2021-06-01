@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+    <title>auth test</title>
+</head>
+
+<body>
+
+    <label for="inp">Phone</label>
+    <input type="text" name="num" id="inp" />
+    <button class="loginbtn" onclick="" type="button" id="sign-in-button">done</button>
+
+    <br>
+    <br>
+
+    <label for="inp">Code</label>
+    <input type="text" name="code" id="code" />
+    <button onclick="verify()" type="button" id="verifyBtn">verify</button>
+
+    <button class="signoutbtn" onclick="sginOut()" type="button">done</button>
+
+
+
+    <div id='recaptcha-container'></div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

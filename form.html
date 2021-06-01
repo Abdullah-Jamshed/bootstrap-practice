@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Form</title>
+
+    <style>
+        .custom-select:focus {
+            border-color: yellow;
+            box-shadow: none;
+        }
+
+        .custom-select.is-invalid,
+        .was-validated .myclass:invalid:focus {
+            border-color: yellow;
+            box-shadow: 0 0 10px 2px black;
+        }
+
+        .custom-select.is-invalid,
+        .was-validated .myclass:invalid {
+            border-color: yellow;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <div class="container mt-4">
+        <form>
+            <div class="form-group">
+                <label for="ro1">ReadOnly</label>
+                <input type="text" class="form-control" id="ro1" placeholder="read only" readonly>
+            </div>
+            <div class="form-row">
+                <div class="col-md-2">
+                    <label class="col-form-label" for="pt1">Plain text:</label>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control-plaintext pl-3" id="pt1" value="plain text" readonly>
+                </div>
+            </div>
+
+            <div class="form-group mt-4">
+                <label for="inp1">username: </label>
+                <input class="form-control" type="text" id="inp1">
+                <small class="form-text text-muted">we will not share your name</small>
+            </div>
+            <div class="form-group">
+                <label for="inp2">password: </label>
+                <input class="form-control" type="password" id="inp2">
+            </div>
+            <div class="form-group">
+                <label for="inp3">Email: </label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                    </div>
+                    <input class="form-control" type="email" id="inp3">
+                </div>
+            </div>
+
+            <div class="form-row ">
+                <div class="col-sm-6">
+                    <label for="city">City</label>
+                    <input id="city" type="text" class="form-control">
+                </div>
+                <div class="col-sm-3">
+                    <label for="state">State</label>
+                    <input id="state" type="text" class="form-control">
+                </div>
+                <div class="col-sm-3 ">
+                    <label for="state">zip</label>
+                    <input id="state" type="text" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="form-group form-check mt-2">
+                <input id="check1" class="form-check-input" type="checkbox">
+                <label class="form-check-label" for="check1">Check it</label>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-4 mt-2">
+                    <label class="" for="sl1">Select</label>
+                    <select id="sl1" class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <label class="" for="ml1">Multiple select</label>
+                    <select id="ml1" multiple class="form-control">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="col-md-4 mt-2">
+                    <label class="" for="text1">Text area</label>
+                    <textarea class="form-control" id="text1"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="ri1">Range</label>
+                <input class="form-control-range" min="0" max="5" step="0.5" type="range" id="ri1">
+            </div>
+
+            <div class="form-group mt-2">
+                <label for="fl1">Example file input</label>
+                <input id="fl1" type="file" class="form-control-file">
+            </div>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="customFile">
+                <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
+
+
+            <button type="button" class="btn btn-primary mt-3">submit</button>
+
+
+        </form>
+
+
+
+
+        <form class="form mt-5">
+
+            <div class="form-group ">
+                <label for="finp2" class="mr-2">Email</label>
+                <input class="form-control" type="text" id="finp2" value="exapmle@gmail">
+            </div>
+            <div class="form-group">
+                <label for="finp3" class="mr-2">Password</label>
+                <input class="form-control" type="password" id="finp3">
+            </div>
+
+            <div class="form-row">
+                <div class="col-sm-3">
+                    <select class="custom-select" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <div class="col-sm-2 my-auto">
+                    <div class="custom-control custom-checkbox">
+                        <input class="custom-control-input" type="checkbox" id="cc1">
+                        <label class="custom-control-label" for="cc1">Remember</label>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 my-auto">
+                    <div class="custom-control custom-control-inline custom-radio">
+                        <input class="custom-control-input" type="radio" name=gender id="cr1">
+                        <label class="custom-control-label" for="cr1">male</label>
+                    </div>
+                    <div class="custom-control custom-control-inline custom-radio">
+                        <input class="custom-control-input" type="radio" name=gender id="cr2">
+                        <label class="custom-control-label" for="cr2">female</label>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary mt-2">submit</button>
+        </form>
+
+
+
+
+        <form class="needs-validation" novalidate>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom01">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Looks not good!
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom02">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Looks not good!
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6 mb-3">
+                    <label for="validationCustom03">City</label>
+                    <input type="text" class="form-control" id="validationCustom03" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid city.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationCustom04">State</label>
+                    <select class="custom-select myclass" id="validationCustom04" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option>...</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid state.
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="validationCustom05">Zip</label>
+                    <input type="text" class="form-control" id="validationCustom05" maxlength="6" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid zip.
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+        </form>
+
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

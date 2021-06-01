@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scrollspy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav id="navbar-example2" class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#fat">@fat</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#mdo">@mdo</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                    aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#one">one</a>
+                    <a class="dropdown-item" href="#two">two</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#three">three</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <h4 id="fat">@fat</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ad vel praesentium doloribus itaque natus consequatur doloremque nemo nulla facilis omnis, earum eum voluptate quidem impedit et ducimus, quis veniam.</p>
+        <h4 id="mdo">@mdo</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus aspernatur in voluptas reprehenderit, maiores ex veritatis at ipsam pariatur facere incidunt adipisci beatae itaque ea ipsa, mollitia aperiam alias.</p>
+        <h4 id="one">one</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus aspernatur in voluptas reprehenderit, maiores ex veritatis at ipsam pariatur facere incidunt adipisci beatae itaque ea ipsa, mollitia aperiam alias.</p>
+        <h4 id="two">two</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus aspernatur in voluptas reprehenderit, maiores ex veritatis at ipsam pariatur facere incidunt adipisci beatae itaque ea ipsa, mollitia aperiam alias.</p>
+        <h4 id="three">three</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus aspernatur in voluptas reprehenderit, maiores ex veritatis at ipsam pariatur facere incidunt adipisci beatae itaque ea ipsa, mollitia aperiam alias.</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
